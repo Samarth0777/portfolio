@@ -17,6 +17,7 @@ export const Project1=()=>{
                     seamless interaction between front-end and database.</p>
                     <p>-- <b>Key Features</b>: User Authentication & Authorization, Real-time Global News, Admin Panel, Feedback Management
                     </p>
+                <a className='link' href="https://github.com/Samarth0777/mern">Visit here</a>
                 </div>
             </div>
 
