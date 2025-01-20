@@ -1,0 +1,81 @@
+.prof{
+    background-image: url(back3.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 218.5vh;
+    filter: brightness(60%);
+    color: rgb(255, 255, 255);
+    z-index: -1;
+    color: white;
+    margin-left: 0;
+    position: relative;
+    align-self: center;
+    margin-top: 0px;
+}
+.softwares{
+    padding-top: 20px;
+    margin: 20px;
+}
+.prof-content{
+    position:absolute;
+    filter: brightness(200%);
+    bottom: -1300px;
+    right: 450px;
+    height: 550px;
+    width: 600px;
+    color: rgb(255, 255, 255);
+    z-index:1
+}
+.name{
+    width: 70%;
+}
+.cpp{
+    width: 90%;
+}
+.java{
+    width: 75%;
+}
+.react{
+    width: 75%;
+}
+.express{
+    width: 70%;
+}
+.mongo{
+    width: 85%;
+}
+.redis{
+    width: 65%;
+}
+.post{
+    width: 85%;
+}
+.my{
+    width: 85%;
+}
+.node{
+    display: flex;
+    padding: 5px;
+}
+h2{
+    font-weight: 200;
+    margin-top: 0
+}
+hr{
+    height: 12px;
+    color: greenyellow;
+    background-color: rgb(22, 164, 26);
+    border: none;
+    width: 75%;
+    margin: 10px;
+}
+h3{
+    font-weight: 200;
+    margin: 0px;
+}
+.percent{
+    margin: 0;
+    font-size: 15px;
+    margin-top: 5px;
+}

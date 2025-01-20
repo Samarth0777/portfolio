@@ -1,0 +1,21 @@
+h1{
+    margin: 0px;
+}
+.header{
+    background-color: rgb(61, 56, 90);
+    color: white;
+    width: 100%;
+    display: flex;
+    margin-left: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    z-index: 2;
+}
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+

@@ -1,0 +1,50 @@
+.port{
+    background-image: url(back6.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 218.5vh;
+    filter: brightness(60%);
+    color: rgb(255, 255, 255);
+    z-index: -1;
+    color: white;
+    margin-left: 0;
+    position: relative;
+    align-self: center;
+    margin-top: 0px;
+}
+.port-content{
+    position:absolute;
+    /* filter: brightness(200%); */
+    bottom: -2050px;
+    right: 450px;
+    height: 550px;
+    width: 700px;
+    color: rgb(255, 255, 255);
+    z-index:1;
+    /* background-color: aliceblue; */
+}
+.head{
+    display: flex;
+    justify-content: center;
+}
+.see-more{
+    margin-top: 3px;
+}
+.projects{
+    display: flex;
+    justify-content: space-evenly;
+}
+.project{
+    background-color: rgb(61, 56, 90);
+    /* opacity: 0.8; */
+    padding: 10px;
+    min-width:180px ;
+}
+.project:hover{
+    filter: brightness(50%);
+    cursor: pointer;
+}
+.desc{
+    margin-left:10px 
+}

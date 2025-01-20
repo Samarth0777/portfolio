@@ -1,0 +1,33 @@
+.updates{
+    background-image: url(show.jpg);
+    height: 110vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 218.5vh;
+    filter: brightness(60%);
+    color: rgb(255, 255, 255);
+    z-index: -1;
+    color: white;
+    margin-left: 0;
+    position: relative;
+    align-self: center;
+    /* margin-top: 38.8px; */
+}
+.update-content{
+    /* background-color: rgb(61, 56, 90); */
+    filter: brightness(120%);
+    position:absolute; 
+    bottom: -4160px;
+    right: 450px;
+    height: 550px; 
+    width: 600px;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+.update-head{
+    margin: 2px;
+}
+img{
+    height: 450px;
+    width: 280px;
+}
