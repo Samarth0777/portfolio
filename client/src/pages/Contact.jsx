@@ -69,7 +69,7 @@ export const Contact=()=>{
                 <input onChange={(e)=>{setIns({..._ins,[e.target.name]:e.target.value})}} value={_ins.email} type="text" name="email" id="" />
                 <label htmlFor="">Phone</label>
                 <input onChange={(e)=>{setIns({..._ins,[e.target.name]:e.target.value})}} value={_ins.phone} type="text" name="phone" id="" />
-                <label htmlFor="">Message*</label>
+                <label htmlFor="">Comment*</label>
                 <textarea onChange={(e)=>{setIns({..._ins,[e.target.name]:e.target.value})}} value={_ins.message} type="text" name="message" id="" />
                 <button className='submit' onClick={handle}>Submit</button> 
             </div>
