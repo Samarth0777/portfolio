@@ -61,3 +61,23 @@ button{
 .submit{
     width: 105%;
 }
+.ai{
+    background-color: rgb(144, 181, 236);
+    border-radius: 20px 20px 20px 0px;
+    position: absolute;
+    bottom: 26%;
+    left: 80%;
+    min-width: 50%;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #cc09c2, 0 0 40px #7e04a0, 0 0 50px #4004c2, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #1a3fb1, 0 0 50px #5861c4, 0 0 60px #0c90e9, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }

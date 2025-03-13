@@ -7,6 +7,7 @@ const redis=require("redis")
 const {connectmongo}=require("./connect")
 const mongocontact=require("./models/mongomodel")
 const cmntrouter=require("./router/cmntsrouter")
+const airouter=require("./router/ai")
 
 const corsoption={
     origin:'http://localhost:5173',
@@ -15,6 +16,7 @@ const corsoption={
 }
 
 app.use(express.json())
+
 
 // connectpg()
 
@@ -45,6 +47,7 @@ connectredis()
 app.use(cors(corsoption))
 
 app.use("/fetch",cmntrouter)
+app.use("/ai",airouter)
   
 app.get("/",(req,res)=>{
     res.status(200).json({msg:"Server Started"})

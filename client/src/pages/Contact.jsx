@@ -4,10 +4,33 @@ import {toast} from 'react-toastify'
 
 export const Contact=()=>{
     const [_ins,setIns]=useState({name:'',email:'',phone:0,message:''})
+    const [_ai,setai]=useState('')
+    const [focus,setFocus]=useState(false)
+
+    //AI Magic
+    const _aimagic=async(e)=>{
+        setIns({
+            ..._ins,
+            [e.target.name]:e.target.value
+        })
+
+        //AI
+        const _resai_=await fetch("http://localhost:200/ai/complete",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify({text:_ins.message})
+        })
+        const _aidata=await _resai_.json()
+        console.log(_aidata)
+        setai(_aidata.data)
+    }
+
     const handle=async()=>{
         console.log(_ins)
 
-        //mongodb
+        mongodb
         const _resmongo_=await fetch('http://localhost:200/savemongo',{
             method:"POST",
             headers:{
@@ -18,7 +41,7 @@ export const Contact=()=>{
         const _mongodata=await _resmongo_.json()
         console.log(_mongodata)
 
-        //postgres
+        postgres
         const _respg_=await fetch('http://localhost:200/savepg',{
             method:"POST",
             headers:{
@@ -70,7 +93,8 @@ export const Contact=()=>{
                 <label htmlFor="">Phone</label>
                 <input onChange={(e)=>{setIns({..._ins,[e.target.name]:e.target.value})}} value={_ins.phone} type="text" name="phone" id="" />
                 <label htmlFor="">Message*</label>
-                <textarea onChange={(e)=>{setIns({..._ins,[e.target.name]:e.target.value})}} value={_ins.message} type="text" name="message" id="" />
+                {focus && _ins.message.length>1 && <div className="ai"><p>{_ai}</p></div>}
+                <textarea onFocus={()=>{setFocus(true)}} onBlur={()=>{setFocus(false)}} onChange={_aimagic} value={_ins.message} type="text" name="message" id="" />
                 <button className='submit' onClick={handle}>Submit</button> 
             </div>
         </div>
